@@ -1,5 +1,6 @@
 /* Esse bloco está iniciando uma camada CSS reset, que é super útil para limpar os estilos padrões dos navegadores e garantir mais consistência. */
 @layer reset {
+
     *,
     *::before,
     *::after {
@@ -13,7 +14,8 @@
         color: inherit;
     }
 
-    ul, ol {
+    ul,
+    ol {
         list-style: none;
     }
 }
@@ -52,19 +54,19 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
 
-        @media (width <= 768px) {
+        @media (width <=768px) {
             grid-template-columns: 1fr;
         }
 
         @media (width > 1024px) {
             grid-template-columns: 1fr 1fr 1fr;
         }
-    }
 
-    main section {
-        padding: 1rem;
-        border: 1px solid var(--color-border);
-        border-radius: 5px;
-        font-size: var(--font-size-base);
+        section {
+            padding: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 5px;
+            font-size: var(--font-size-base);
+        }
     }
 }
