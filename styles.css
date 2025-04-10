@@ -51,6 +51,14 @@
         grid-template-rows: auto 1fr auto;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+
+        @media (width <= 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media (width > 1024px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 
     main section {
@@ -58,17 +66,5 @@
         border: 1px solid var(--color-border);
         border-radius: 5px;
         font-size: var(--font-size-base);
-    }
-
-    @media (max-width: 768px) {
-        main {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    @media (min-width: 1025px) {
-        main {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
     }
 }
