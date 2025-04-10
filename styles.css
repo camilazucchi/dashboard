@@ -99,3 +99,36 @@
         }
     }
 }
+
+@layer components {
+    .metrics {
+        display: flex;
+        gap: 1rem;
+
+
+        .metric {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: var(--color-bg-alternate);
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+
+            &>* {
+                flex-basis: 100%;
+            }
+
+            .metric-number {
+                font-size: var(--font-size-large);
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .metric-label {
+                font-size: var(--font-size-small);
+                margin: 0;
+            }
+        }
+    }
+}
