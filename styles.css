@@ -147,6 +147,11 @@
                 background-color: var(--color-bg-alternate);
             }
         }
+    }
 
+    #analytics {
+        img {
+            max-width: 100%;
+        }
     }
 }
