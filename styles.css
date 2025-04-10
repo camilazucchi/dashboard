@@ -150,8 +150,14 @@
     }
 
     #analytics {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
         img {
             max-width: 100%;
+            align-self: center;
         }
     }
 
