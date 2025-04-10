@@ -46,6 +46,35 @@
         background-color: var(--color-bg);
     }
 
+    header {
+        grid-column: 1 / -1;
+        background-color: var(--color-bg-darker);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-base);
+        }
+
+        .header-nav {
+            ul {
+                display: flex;
+                gap: 1rem;
+
+                li {
+                    a {
+                        color: var(--color-text);
+                        font-size: var(--font-size-base);
+                    }
+                }
+            }
+        }
+    }
+
     main {
         padding: 1rem;
         background-color: var(--color-bg);
