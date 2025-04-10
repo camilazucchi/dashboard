@@ -32,4 +32,43 @@
         --font-size-small: 0.857rem;
         --font-size-large: 1.714rem;
     }
+
+    body {
+        font-family: var(--font-primary);
+        font-size: var(--font-size-base);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+    }
+
+    main {
+        padding: 1rem;
+        background-color: var(--color-bg);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    main section {
+        padding: 1rem;
+        border: 1px solid var(--color-border);
+        border-radius: 5px;
+        font-size: var(--font-size-base);
+    }
+
+    @media (max-width: 768px) {
+        main {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        main {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }
